@@ -16,11 +16,11 @@
     scroll-behavior: smooth;
 }
 /* Alternating Section Colors */
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: #f9f9f9; /* Light grey for even sections */
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #ffffff; /* White for odd sections */
 }
 
@@ -82,7 +82,7 @@ section:nth-child(odd) {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--dark-grey);
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
