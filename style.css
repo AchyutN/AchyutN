@@ -443,3 +443,8 @@ footer a:hover {
     color: #555;
     margin-bottom: 10px;
 }
+
+.experience-card ul{
+    padding-left: 1.5rem;
+    bottom-margin: .25rem;
+}
