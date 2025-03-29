@@ -44,4 +44,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 500); // Delay to simulate "sending" process
             });
         });
+let timer = null;
+const left = document.getElementById("circuit-left");
+const right = document.getElementById("circuit-right");
+
+window.addEventListener("scroll", () => {
+    left.classList.add("shrink");
+    right.classList.add("shrink");
+
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+        left.classList.remove("shrink");
+        right.classList.remove("shrink");
+    }, 150); // Reset after scroll stops
+});
         
