@@ -16,13 +16,10 @@
     scroll-behavior: smooth;
 }
 /* Alternating Section Colors */
-.main-content section:nth-of-type(odd) {
+section.alt {
     background-color: #f9f9f9;
 }
 
-.main-content section:nth-of-type(even) {
-    background-color: #ffffff;
-}
 
 
 /* Responsive Design */
