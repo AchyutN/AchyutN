@@ -15,65 +15,6 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
-/*circuit lines*/
-/* Circuit Lines Base */
-.circuit-lines {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem;
-    pointer-events: none;
-    z-index: 10;
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInCircuit 1s ease-out forwards;
-}
-
-.circuit-lines.left {
-    left: 0;
-}
-
-.circuit-lines.right {
-    right: 0;
-}
-
-.circuit-lines .line {
-    width: 3px;
-    height: 60px;
-    background: #BF5700;
-    box-shadow: 0 0 10px #BF5700;
-    border-radius: 4px;
-    animation: glow 1.5s ease-in-out infinite alternate;
-    transition: all 0.3s ease;
-}
-
-/* Scroll shrink */
-.circuit-lines.shrink .line {
-    transform: scaleY(0.6);
-    opacity: 0.6;
-    box-shadow: 0 0 4px #BF5700;
-}
-
-/* Glow pulse animation */
-@keyframes glow {
-    from {
-        box-shadow: 0 0 5px #BF5700;
-    }
-    to {
-        box-shadow: 0 0 15px #FF7518;
-    }
-}
-
-/* Fade in on page load */
-@keyframes fadeInCircuit {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Alternating Section Colors */
 section.alt {
