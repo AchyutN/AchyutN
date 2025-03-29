@@ -16,13 +16,14 @@
     scroll-behavior: smooth;
 }
 /* Alternating Section Colors */
-section:nth-child(odd) {
-    background-color: #f9f9f9; /* Light grey for even sections */
+.main-content section:nth-of-type(odd) {
+    background-color: #f9f9f9;
 }
 
-section:nth-child(even) {
-    background-color: #ffffff; /* White for odd sections */
+.main-content section:nth-of-type(even) {
+    background-color: #ffffff;
 }
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
